@@ -48,9 +48,9 @@ class Arguments(object):
       type=str,
       default='u + v',
       help=
-      'Function to plot (default: u + v). '
-      'Available variables: u, v, w which are float values between 0 and 1.'
-      'Available package: math'
+      'Function to plot (default: u + v).'
+      '\nAvailable variables: u, v, w which are float values between 0 and 1.'
+      '\nAvailable package: math'
     )
     arguments = parser.parse_args()
     return cls(arguments.k, arguments.formula, parse_fn(arguments.formula))
